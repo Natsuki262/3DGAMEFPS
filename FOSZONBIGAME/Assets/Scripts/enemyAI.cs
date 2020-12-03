@@ -15,6 +15,7 @@ public class enemyAI : MonoBehaviour
 
     Vector3 playerPos;
 
+    [SerializeField]
     public float distance;//目標との距離
 
     public Transform other;
@@ -39,15 +40,18 @@ public class enemyAI : MonoBehaviour
         //enemy.destination = player.transform.position;
         distance = Vector3.Distance(transform.position, player.transform.position);
         //Debug.Log(playerisitance);
-
+        
         if (distance < 5)
         {
+            enemy.speed = enemy.remainingDistance - enemy.stoppingDistance;
             enemy.destination = player.transform.position;
+
         }
 
         else if (distance < 3)
         {
-            enemy.speed = 0;
+            //enemy.stoppingDistance(3.0f); 
         }
+       //NavMeshAgent.stoppin
     }
 }
