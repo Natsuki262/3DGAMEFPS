@@ -52,7 +52,15 @@ public class Player : MonoBehaviour
 
         float angle = Mathf.LerpAngle(minangle, maxAngle, Time.time);
         transform.eulerAngles = new Vector3(0, angle, 0);*/
-
+        var mainCamera = Camera.main;
+        if (mainCamera == null)
+        {
+            Debug.Log("カメラないよ");
+        }
+        else
+        {
+            Debug.Log("カメラあるよ");
+        }
         if (dir == Vector3.zero)
         {
             //方向の入力がneutralの時はy軸方向の速度を維持
