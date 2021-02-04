@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//NaviMeshAgentを使うのに必要
 using UnityEngine.AI;
 
 public class enemyAgentAIPatrol : MonoBehaviour
@@ -17,6 +18,7 @@ public class enemyAgentAIPatrol : MonoBehaviour
     /// 巡回地点のオブジェクト数
     /// </summary>
     public int roundPoint = 0;
+
 
     void Start()
     {

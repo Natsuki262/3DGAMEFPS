@@ -84,15 +84,8 @@ public class Player : MonoBehaviour
 
 
 
-
-
-
-
-
-
-
         //レイの生成（レイの原点、レイの飛ぶ方向）
-        playerRay = new Ray(transform.position, transform.forward);
+        playerRay = new Ray(this.transform.position, transform.forward);
 
         //レイの判定（飛ばすレイ、レイが当たったものの情報、レイの長さ
 
