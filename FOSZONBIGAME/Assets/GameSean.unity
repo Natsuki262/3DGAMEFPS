@@ -886,6 +886,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie1 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8119865622055155783, guid: 73d58f6b4a196fb49a7b9b53a6ce37b8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73d58f6b4a196fb49a7b9b53a6ce37b8, type: 3}
 --- !u!4 &145187129 stripped
@@ -4714,7 +4719,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 725336800}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -6.34}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1781339629}
@@ -6902,7 +6907,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053114210}
   m_LocalRotation: {x: 0.15860948, y: -0.40183452, z: 0.07085008, w: 0.8990842}
-  m_LocalPosition: {x: 0, y: 1, z: -6.34}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1.0000001}
   m_Children:
   - {fileID: 1395380746}
@@ -7207,10 +7212,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.55997545
   m_Height: 2.096921
   m_Direction: 1
-  m_Center: {x: 0, y: 0.9616046, z: 0}
+  m_Center: {x: 0.12031853, y: 0.9616046, z: 0.3097207}
 --- !u!1001 &1112120883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11718,6 +11723,67 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1594504176}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1597525523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1597525524}
+  - component: {fileID: 1597525525}
+  - component: {fileID: 1597525526}
+  m_Layer: 0
+  m_Name: GameObject (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1597525524
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597525523}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.76}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1597525525
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597525523}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.696913, y: 1, z: 1}
+  m_Center: {x: -0.35490978, y: 0, z: 0}
+--- !u!114 &1597525526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597525523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2d6aeabe55cf9458d33c92820e7787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyZonbi: {fileID: 8923097322149908604, guid: 74f947b657ff17e4f87f7ab8db27961a,
+    type: 3}
+  Player: {fileID: 1475255182}
+  SpawnPos: 2
 --- !u!1001 &1611946597
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16207,6 +16273,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_unitychan_humanoid
       objectReference: {fileID: 0}
+    - target: {fileID: 7524421243493894872, guid: cfcad4c476c183044b0488c1e6ac9582,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7524421243493996280, guid: cfcad4c476c183044b0488c1e6ac9582,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16220,7 +16291,7 @@ PrefabInstance:
     - target: {fileID: 7524421243493996280, guid: cfcad4c476c183044b0488c1e6ac9582,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.34
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7524421243493996280, guid: cfcad4c476c183044b0488c1e6ac9582,
         type: 3}
