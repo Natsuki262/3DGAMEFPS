@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Goal : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -14,5 +14,9 @@ public class Goal : MonoBehaviour
     void Update()
     {
         
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        SceneManager.LoadScene("clear");
     }
 }
