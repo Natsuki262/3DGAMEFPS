@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Animations;
 
 public class Gamestart : MonoBehaviour
 {
@@ -19,7 +20,9 @@ public class Gamestart : MonoBehaviour
     }
     public void Click()
     {
+
         Debug.Log("押したよ！");
         SceneManager.LoadScene("GameSean");
     }
+    
 }
