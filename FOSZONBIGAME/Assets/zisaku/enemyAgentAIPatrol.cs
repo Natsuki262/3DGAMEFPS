@@ -4,6 +4,7 @@ using UnityEngine;
 //NaviMeshAgentを使うのに必要
 using UnityEngine.AI;
 
+
 public class enemyAgentAIPatrol : MonoBehaviour
 {
     /// <summary>
@@ -58,6 +59,13 @@ public class enemyAgentAIPatrol : MonoBehaviour
         {
             //次の巡回地点を設定する処理
             GotoNextPoint();
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag=="Player")
+        {
+            Debug.Log("接触");
         }
     }
 
