@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 //NaviMeshAgentを使うのに必要
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 
 public class enemyAgentAIPatrol : MonoBehaviour
@@ -19,6 +20,8 @@ public class enemyAgentAIPatrol : MonoBehaviour
     /// 巡回地点のオブジェクト数
     /// </summary>
     public int roundPoint = 0;
+    [SerializeField]
+    GameObject Panel;
 
 
     void Start()
@@ -60,13 +63,20 @@ public class enemyAgentAIPatrol : MonoBehaviour
             //次の巡回地点を設定する処理
             GotoNextPoint();
         }
+       
     }
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag=="Player")
         {
             Debug.Log("接触");
+            Panel.SetActive(true);
         }
+        
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        Panel.SetActive(false);
     }
 
 }
