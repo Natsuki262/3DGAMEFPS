@@ -646,6 +646,7 @@ GameObject:
   m_Component:
   - component: {fileID: 89425705}
   - component: {fileID: 89425706}
+  - component: {fileID: 89425707}
   m_Layer: 0
   m_Name: GameObject (4)
   m_TagString: Untagged
@@ -678,8 +679,20 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.4300499
-  m_Center: {x: 0, y: 1.0813665, z: -0.006609559}
+  m_Radius: 1.9115033
+  m_Center: {x: 0, y: 1.0813665, z: 0.4748428}
+--- !u!114 &89425707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89425704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ef0ef8af8195d4e8d6023c79868737, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &100262246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -863,7 +876,7 @@ PrefabInstance:
     - target: {fileID: 5112947991243000404, guid: 73d58f6b4a196fb49a7b9b53a6ce37b8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.6
+      value: -0.68
       objectReference: {fileID: 0}
     - target: {fileID: 5112947991243000404, guid: 73d58f6b4a196fb49a7b9b53a6ce37b8,
         type: 3}
@@ -11328,7 +11341,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -15560,6 +15573,14 @@ PrefabInstance:
     - target: {fileID: 416390, guid: c76d2d3504ddb4847940a815cad04644, type: 3}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 498518, guid: c76d2d3504ddb4847940a815cad04644, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 498518, guid: c76d2d3504ddb4847940a815cad04644, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c76d2d3504ddb4847940a815cad04644, type: 3}
