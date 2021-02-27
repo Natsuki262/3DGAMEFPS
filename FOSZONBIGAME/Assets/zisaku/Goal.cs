@@ -17,6 +17,6 @@ public class Goal : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene("clear");
+        SceneManager.LoadScene("Title 2");
     }
 }

@@ -17,28 +17,28 @@ public class Playersearch : MonoBehaviour
     public float distance;
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
-        goal = GameObject.Find("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
 
+        //agent = GetComponent<NavMeshAgent>();
     }
     private void OnTriggerEnter(Collider other)
     {
+        goal = GameObject.Find("Player");
         Debug.Log("プレイヤー");
 
         if (other.tag == "Player")
         {
             Debug.Log("まいあひー");
-            transform.LookAt(targetObject);
-            distance = Vector3.Distance(transform.position, goal.transform.position);
             Debug.Log(distance);
             if (distance < 1)
             {
+                distance = Vector3.Distance(transform.position, goal.transform.position);
                 agent.destination = goal.transform.position;
+                transform.LookAt(targetObject);
             }
         }
 

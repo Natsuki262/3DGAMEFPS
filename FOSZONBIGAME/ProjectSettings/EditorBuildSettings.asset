@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/zisaku/Sean/GameSean.unity
     guid: 42feca406fd262b4da7b3d0557ff9fe1
   - enabled: 1
-    path: Assets/zisaku/Sean/clear.unity
-    guid: c8fc2c25a8ddef944b5d51d6a34cefa5
+    path: Assets/zisaku/Sean/Title 2.unity
+    guid: f2d89e903e63c45419e499f86a0933ec
   m_configObjects: {}
